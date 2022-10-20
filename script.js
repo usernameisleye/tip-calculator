@@ -10,8 +10,9 @@ function calcTip(){
         alert('Please fill in all fields below');
         return;
     }
-    // console.log(rating.value)
     const myTip = inputField.value * Number(rating.value);
-    tip.textContent = Math.floor(myTip); 
+
+    tip.textContent = '₦' + Math.floor(myTip); 
+    
 };
 
