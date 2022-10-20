@@ -1,0 +1,70 @@
+body{
+    background-color: #023047;
+    font-family: Montserrat;
+}
+main{
+    background-color: #219ebc;
+    width: 30%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10rem;
+}
+.head{
+    margin: 1rem;
+    text-align: center;
+}
+.head label{
+    font-size: 1.2rem;
+    padding: 0 2rem;
+}
+.head input{
+    margin-top: 1rem;
+    padding: .8rem 1rem;
+    border-radius: .5rem;
+    outline: none;
+    font-size: 1rem;
+    border: #000 1px solid;
+    background-color: #219ebc;
+}
+::placeholder{
+    font-family: Montserrat;
+    color: #000;
+}
+.ratings{
+    font-family: Montserrat;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    background-color: #219ebc;
+    border: #000 1px solid;
+    border-radius: .5rem;
+    outline: none;
+}
+
+main p{
+    font-size: 1.2rem;
+}
+main p span{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+main button{
+    font-family: Montserrat;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    padding: 1rem 2rem;
+    background-color: #023047;
+    color: #fff;
+    border: none;
+    border-radius: 2rem;
+    transition: .25s;
+}
+main button:hover{
+    transform: scale(1.1);
+}

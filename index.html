@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="head">
+            <h1>Welcome to the Tip Calculator</h1>
+
+            <label for="amoutSpent">Amount Spent: </label><br>
+            <input type="number" id="amountSpent" name="amountSpent" placeholder="Input amount here">
+        </div>
+
+        <div>
+            <select name="ratings" id="ratings" class="ratings">
+                <option value="" disabled selected>Choose one of these</option>
+                <option value="0.2">Excellent</option>
+                <option value="0.1">Good</option>
+                <option value="0.05">Poor</option>
+            </select>
+        </div>
+
+        <p>Your tip is: <span id="tip"></span></p>
+
+        <button id="calculate">Calculate Tip</button>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
