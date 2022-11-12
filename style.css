@@ -47,6 +47,14 @@ main{
     outline: none;
 }
 
+.total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: .5rem;
+    width: 60%;
+}
+
 main p{
     font-size: 1.2rem;
 }
@@ -54,17 +62,28 @@ main p span{
     font-size: 1.5rem;
     font-weight: bold;
 }
-main button{
+
+.btn{
+    background-color: #023047;
+    color: #fff;
+    padding: .2rem .5rem;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.calculate{
     font-family: Montserrat;
     font-size: 1.2rem;
     margin-bottom: 1rem;
-    padding: 1rem 2rem;
+    padding: 1rem 1.5rem;
     background-color: #023047;
     color: #fff;
     border: none;
     border-radius: 2rem;
     transition: .25s;
+    cursor: pointer;
 }
-main button:hover{
-    transform: scale(1.1);
+.calculate:hover{
+    transform: scale(1.05);
 }

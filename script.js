@@ -1,7 +1,8 @@
 const inputField = document.getElementById('amountSpent');
 const rating = document.getElementById('ratings');
-const tip = document.getElementById('tip');
+let tip = document.getElementById('tip');
 const calculateBtn= document.getElementById('calculate');
+const valueBtns = document.querySelectorAll('.btn');
 
 calculateBtn.addEventListener('click', calcTip)
 
@@ -10,9 +11,25 @@ function calcTip(){
         alert('Please fill in all fields below');
         return;
     }
-    const myTip = inputField.value * Number(rating.value);
+    let myTip = inputField.value * Number(rating.value);
 
-    tip.textContent = '₦' + Math.floor(myTip); 
-    
+    tip.textContent = Math.floor(myTip);  
 };
+
+
+
+valueBtns.forEach(e =>{
+    e.addEventListener('click', button =>{
+        let value = button.target.classList;
+        if(value.contains('decrease')){
+            tip.textContent--;
+        }
+        else if(value.contains('increase')){
+            tip.textContent++;
+        }
+        else{
+            return
+        }
+    })
+})
 
